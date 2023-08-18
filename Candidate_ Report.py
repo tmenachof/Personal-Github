@@ -17,10 +17,10 @@ can_rep1 = df[['Condition','Position','Candidate Name','Status','Last Correspond
 can_rep2 = can_rep1.query("(Condition =='Moving Forward') or (Condition =='Under Review') or (Condition =='Hired')")
 
 
-outlook = win32com.client.Dispatch("outlook.application")
-mail = outlook.CreateItem(0)
-mail.To = 'tmenachof@primepartnersengineering.com'
-mail.Subject = "Candidate Report"
+# outlook = win32com.client.Dispatch("outlook.application")
+# mail = outlook.CreateItem(0)
+# mail.To = 'tmenachof@primepartnersengineering.com'
+# mail.Subject = "Candidate Report"
 
 Table = build_table(can_rep2, 'blue_dark',
                     font_size = '10px',
